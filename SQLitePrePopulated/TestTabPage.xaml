@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SQLitePrePopulated.TestTabPage">
+	<ListView x:Name="listView" Margin="20" SeparatorVisibility="None" BackgroundColor="Transparent" ItemSelected="OnItemSelected">
+		<ListView.ItemTemplate>
+			<DataTemplate>
+				<ViewCell>
+					<StackLayout Margin="0,0,0,5" Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="Lime">
+						<Image Source="{Binding Image}"/>
+						<Label Text="{Binding Name}" VerticalTextAlignment="Center"/>
+					</StackLayout>
+				</ViewCell>
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
+</ContentPage>
